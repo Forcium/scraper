@@ -1,0 +1,112 @@
+html {
+  background-color: lightgray;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.blogger {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#scrape {
+  text-align: center;
+}
+
+.separate {
+  border: solid 2px yellow;
+  color: white;
+  padding: 2%;
+}
+
+.linkEdit {
+  color: darkgreen;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*#messages {
+  font-size: 10px;
+  border: 2px solid yellow;
+}*/
+
+#viewNotes {
+  font-size: 10px;
+  border: 2px solid yellow;
+  float: right;
+  width: 100%;
+  padding: 2%;
+  }
+
+#savedNote {
+  font-size: 10px;
+  border: 2px solid yellow;
+  float: right;
+  width: 100%;
+  padding: 2%;
+  }
+
+  #saveNote {
+    float: right;
+  }
+
+textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+
+
+
+
+
+
+
+
+      /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
