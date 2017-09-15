@@ -1,29 +1,35 @@
 html {
-  background-color: lightgray;
+  background-color: darkgray;
 }
 
 body {
-  background-color: lightgray;
+  background-color: darkgray;
 }
 
 .blogger {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #scrape {
   text-align: center;
 }
 
+#delete {
+  position: right;
+  color: black;
+}
+
 .separate {
   border: solid 2px yellow;
   color: white;
   padding: 2%;
+  font-size: 15px;
 }
 
 .linkEdit {
   color: darkgreen;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -65,11 +71,6 @@ textarea, input {
         height: 200px;
         font-size: 18px;
       }
-
-
-
-
-
 
 
 

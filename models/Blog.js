@@ -5,6 +5,10 @@ var Schema = mongoose.Schema;
 
 // Create article schema
 var BlogSchema = new Schema({
+  blogId: {
+    type: Number,
+    unique: true
+  },
   title: {
     type: String,
     required: true

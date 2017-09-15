@@ -54,9 +54,11 @@ app.get("/scraper", function(req, res) {
   request("https://techcrunch.com/popular/", function(error, response, html) {
     var $ = cheerio.load(html);
 
-    $(".block-content").each(function(i, element) {
+    $(".river-block").each(function(i, element) {
 
       var result = {};
+
+      result.blogId = $(this).attr("id");
 
       result.title = $(this).find("h2 a").text();
 
@@ -167,6 +169,18 @@ app.get("/notes", function(req, res) {
       res.json(doc);
     }
   });
+});
+
+// db.test_users.remove( {_id: ObjectId("4d512b45cc9374271b02ec4f")});
+// db.collection.remove({"_id":{$type:7}})
+
+//Delete saved notes
+app.post("/notes/:id", function(req, res) {
+
+  Note.remove({_id: req.params.id});
+  // db.Note.update({_id: req.params.id}, { $unset : {body:1}},{multi: true});
+
+console.log("reqparamsid = " + req.params.id);
 });
 
 

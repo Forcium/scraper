@@ -6,22 +6,18 @@ var Schema = mongoose.Schema;
 // Create the Note schema
 var NoteSchema = new Schema({
   blog: {
-    type: String,
-    unique: true
+    type: String
   },
   link: {
-    type: String,
-    unique: true
+    type: String
   },
   // Just a string
   title: {
-    type: String,
-    unique: true
+    type: String
   },
   // Just a string
   body: {
-    type: String,
-    unique: true
+    type: String
   }
 });
 
