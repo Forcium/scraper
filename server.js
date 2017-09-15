@@ -175,20 +175,12 @@ app.get("/notes", function(req, res) {
 
 
 //Delete saved notes (Not working..... )
-// app.delete("/notes/:id", function(req, res) {
-//
-//   Note.findByIdAndRemove({_id: ObjectId("req.params.id")}, function(err) {
-//       if (!err) {
-//               message.type = 'Done!';
-//       }
-//       else {
-//               message.type = 'error';
-//       }
-//
-//
-//   });
-// console.log("reqparamsid = " + req.params.id);
-// });
+app.post("/notes/:id", function(req, res) {
+
+  Note.findByIdAndRemove(req.params.id, function(err){
+
+  });
+ });
 
 
 

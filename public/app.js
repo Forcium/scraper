@@ -27,21 +27,14 @@ $.getJSON("/notes", function(data) {
   }
 });
 
+//DELETE NOTES
+$(document).on("click", "#delete", function(event){
+  var thisId = $(this).attr("data-id");
 
-
-//DELETE FUNCTION NOT WORKINGGGGGGGGGGGGG~~~~~~~~~~~~~~~~~
-// $(document).on("click", "#delete", function() {
-//   var thisId = $(this).attr("data-id");
-//   console.log("delete button id = " + thisId);
-//   $.ajax({
-//     method: "POST",
-//     url: "/blogs/" + thisId
-//   })
-//   .done(function(data) {
-//   console.log(data);
-//   // document.location.reload();
-//   });
-// });
+    $.post("/notes/" + thisId).then(function(data){
+     });
+     document.location.reload();
+   });
 
 
 //````````````````````````````````````````````````````````````````````
