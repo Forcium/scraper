@@ -28,18 +28,20 @@ $.getJSON("/notes", function(data) {
 });
 
 
-$(document).on("click", "#delete", function() {
-  var thisId = $(this).attr("data-id");
-  console.log("delete button id = " + thisId);
-  $.ajax({
-    method: "POST",
-    url: "/notes/" + thisId
-  })
-  .done(function(data) {
-  console.log(data);
-  // document.location.reload();
-  });
-});
+
+//DELETE FUNCTION NOT WORKINGGGGGGGGGGGGG~~~~~~~~~~~~~~~~~
+// $(document).on("click", "#delete", function() {
+//   var thisId = $(this).attr("data-id");
+//   console.log("delete button id = " + thisId);
+//   $.ajax({
+//     method: "POST",
+//     url: "/blogs/" + thisId
+//   })
+//   .done(function(data) {
+//   console.log(data);
+//   // document.location.reload();
+//   });
+// });
 
 
 //````````````````````````````````````````````````````````````````````

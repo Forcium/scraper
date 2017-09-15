@@ -4,6 +4,7 @@ var mongojs = require("mongojs");
 var request = require("request");
 var cheerio = require("cheerio");
 
+
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 
@@ -171,17 +172,23 @@ app.get("/notes", function(req, res) {
   });
 });
 
-// db.test_users.remove( {_id: ObjectId("4d512b45cc9374271b02ec4f")});
-// db.collection.remove({"_id":{$type:7}})
 
-//Delete saved notes
-app.post("/notes/:id", function(req, res) {
 
-  Note.remove({_id: req.params.id});
-  // db.Note.update({_id: req.params.id}, { $unset : {body:1}},{multi: true});
-
-console.log("reqparamsid = " + req.params.id);
-});
+//Delete saved notes (Not working..... )
+// app.delete("/notes/:id", function(req, res) {
+//
+//   Note.findByIdAndRemove({_id: ObjectId("req.params.id")}, function(err) {
+//       if (!err) {
+//               message.type = 'Done!';
+//       }
+//       else {
+//               message.type = 'error';
+//       }
+//
+//
+//   });
+// console.log("reqparamsid = " + req.params.id);
+// });
 
 
 
